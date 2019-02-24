@@ -49,15 +49,18 @@
         <p class="text-info">
           Book for your shoot from our site by filling the form below </p><br>
           <div class="form-group">
-            <form id="contact" action="index.html" method="post">
-              Tel Number<input type="number" class="form-control" placeholder="0700-000-000" min="10" max="10" required>
-              Type <select class="form-control">
-                <option value="Null">-<em>Select Category</em>-</option>
-                <option value="Executive">Executive</option>
-                <option value="Pocket friendly">Pocket Friendly</<op></op>tion>
-              </select><br>
+            <form id="contact">
               <center>
+              Tel Number<input type="number" id="number" class="form-control" placeholder="0700-000-000" required>
+              Category <select class="form-control" id="category">
+                <option value="Null">Category</option>
+                <option value="Executive">Executive</option>
+                <option value="Pocket friendly">Pocket Friendly</<op></option>
+              </select>
+              Date<input type="date" id="date" class="form-control" required><br>
+
                 <button type="submit" class="btn btn-info" name="button">Book Now</button>
+                <div id="output" class="bg-success col-5"></div>
                 </center>
             </form>
           </div>
