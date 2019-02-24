@@ -11,16 +11,13 @@
     <meta charset="utf-8">
     <title>Photography</title>
   </head>
-  <body>
+  <body class="container">
     <div class="nav">
       <div class="navbar">
-        <p>Home</p>
+        <p><a href="index.html">Home</a></p>
       </div>
       <div class="navbar">
-        <p>Shoots</p>
-      </div>
-      <div class="navbar">
-        <p>Gallery</p>
+        <p><a href="gallery.html">Gallery</a></p>
       </div>
     </div>
 <div class="row">
@@ -45,19 +42,19 @@
       </table>
     </div>
     <div class="row">
-      <div class="col-9">
+      <div class="col-11">
         <p class="text-info">
           Book for your shoot from our site by filling the form below </p><br>
           <div class="form-group">
             <form id="contact">
               <center>
-              Tel Number<input type="number" id="number" class="form-control" placeholder="0700-000-000" required>
-              Category <select class="form-control" id="category">
+              Tel Number<input type="number" id="number" class="form-control" for="form_number" placeholder="0700-000-000" required>
+              Category <select class="form-control" id="category" for="form_package">
                 <option value="Null">Category</option>
                 <option value="Executive">Executive</option>
                 <option value="Pocket friendly">Pocket Friendly</<op></option>
               </select>
-              Date<input type="date" id="date" class="form-control" required><br>
+              Date<input type="date" for="form_date" id="date" class="form-control" required><br>
 
                 <button type="submit" class="btn btn-info" name="button">Book Now</button>
                 <div id="output" class="bg-success col-5"></div>
@@ -73,11 +70,11 @@
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <div class="item active">
+      <div class="item">
         <img src="https://kenyaphotographer.co.ke/upload/photos/thumbs/916201843914pm_kenya_models_photography%201.jpg" alt="Los Angeles" class="image-responsive" style="width:100%;">
       </div>
 
-      <div class="item">
+      <div class="item active">
         <img src="https://www.the-star.co.ke/sites/default/files/styles/new_full_content/public/articles/2017/04/30/1551000.jpg?itok=OCGo_Bte" alt="Chicago" class="image-responsive" style="width:100%;">
       </div>
 
@@ -96,7 +93,8 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+</div><br>
+<a href="gallery.html"><button type="button" class="btn btn-info" name="button">Check out the Gallery</button></a>
   </div>
   </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
